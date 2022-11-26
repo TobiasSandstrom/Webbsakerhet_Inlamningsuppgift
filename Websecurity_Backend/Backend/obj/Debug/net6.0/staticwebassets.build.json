@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "OBlUB3R+9ALzptOklWv8Ni+/ThIVQqGQsve25H4k1b4=",
+  "Source": "Backend",
+  "BasePath": "_content/Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Backend\\wwwroot",
+      "Source": "Backend",
+      "ContentRoot": "C:\\Users\\Tobia\\Desktop\\Dokument\\Skola\\10_Webbsäkerhet\\Webbsakerhet_Inlamningsuppgift 2\\Websecurity_Backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

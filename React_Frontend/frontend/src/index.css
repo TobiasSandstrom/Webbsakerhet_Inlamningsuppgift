@@ -1,0 +1,299 @@
+
+body, html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar{
+  background-color: #5f6362;
+  height: 100px;
+  display: flex;
+}
+
+.navbar .navbar-links-container{
+  width: 100%;
+  margin: auto;
+}
+
+.navbar ul{
+ list-style: none;
+ display: flex;
+ justify-content: space-evenly;
+}
+
+
+.navbar-link{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.home-container{
+
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+}
+
+.not-autenticated-container{
+ display: grid;
+ margin-top: 15vh;
+ justify-content: center;
+ flex-direction: column;
+ text-align: center;
+}
+
+.error-signin-button{
+  padding: .8em .1em;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: .7em;
+  border: 0;
+  background-color: #599eaf;
+  color: white;
+  cursor: pointer;
+  width: 85%;
+  margin: auto;
+}
+
+
+.home-container h1{
+  color: #303030;
+}
+
+
+.upload-post-container{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.input-group label{
+  align-self: left;
+  display: block;
+  width: 35vw;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.input-group textarea,
+.input-group input{
+  width: 65%;
+  font-size: 1.2rem;
+}
+
+.blog-form button {
+
+  padding: .8em 2.7em;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: .7em;
+  border: 0;
+  background-color: #5f6362;
+  color: white;
+  cursor: pointer;
+
+}
+
+.blog-form p{
+ font-size: 0.9rem;
+ font-weight: bold;
+}
+.error-message{
+  color: red;
+}
+.success-message{
+  color: green
+}
+
+
+.blog-container{
+  width: 90%;
+  margin: auto;
+
+}
+
+.blog-container h1{
+  text-align: center;
+}
+.post-container{
+  border: 1px solid black;
+  width: 75vw;
+  margin: .7rem;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.post-container p{
+  padding: 0 .7rem;
+}
+
+.header-container{
+  padding: 0 .7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container h3,
+.header-container small{
+  display: inline;
+}
+
+.profile-container{
+  display: grid;
+  justify-content: center;
+  margin: auto;
+}
+
+.profile-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profile-banner-img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.profile-img-container{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.profile-link{
+  text-decoration: none;
+  color: #599eaf;
+  font-size: .8em;
+  
+}
+
+
+.profile-info{
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  border: 1px solid black;
+  width: 60vw;
+  margin: auto;
+}
+
+.profile-info .profile-img{
+  height: 15vh;
+}
+
+.profile-text{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+.upload-pictures-container{
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.upload-profile-container,
+.upload-banner-container{
+  border: 1px solid black;
+  width: 30%;
+  display: flex;
+  padding: 1em;
+}
+
+.upload-btn-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.upload-btn-container .profileError {
+
+  color: red;
+
+}
+.upload-btn-container .profileSuccess {
+
+  color: green;
+
+}
+
+
+.upload-picture-btn{
+  padding: .8em .2em;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: .7em;
+  border: 0;
+  background-color: #599eaf;
+  color: white;
+  cursor: pointer;
+  width: 65%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+.picture-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+
+.loader {
+  position: fixed;
+  background-color: #000000ba;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+}
+.spinner {
+  width: 75px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top-color: #5f6362;
+  border-bottom-color: #5f6362;
+  animation: spin 1000ms infinite ease-in-out;
+
+}
+.reverse-spinner {
+  width: 35px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top-color: #5f6362;
+  border-bottom-color: #5f6362;
+  animation: spin 1000ms infinite ease-in-out;
+  animation-direction: reverse;
+  position: absolute;
+}
+
+@keyframes spin {
+  from { rotate: 0;}
+  to {rotate: 360deg;}
+}
